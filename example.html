@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const BIRTHDAY = '18.04.1982';
+        const UPPER_CASE_BIRTHDAY = BIRTHDAY.toUpperCase();
+        console.log(UPPER_CASE_BIRTHDAY);
+
+        function calculateAge(birthday) {
+            const birthdate = new Date(birthday);
+            const today = new Date();
+            const age = today.getFullYear() - birthdate.getFullYear();
+            return age;
+        }
+
+        const AGE = calculateAge(BIRTHDAY);
+        alert(AGE);
+    </script>
+</body>
+</html>
